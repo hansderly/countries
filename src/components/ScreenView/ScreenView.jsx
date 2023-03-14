@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ScreenView = ({ children }) => <div>{children}</div>;
+import styles from './ScreenView.module.css';
+
+const ScreenView = ({ children }) => <div className={styles.container}>{children}</div>;
 
 ScreenView.propTypes = {
   children: PropTypes.node.isRequired,
