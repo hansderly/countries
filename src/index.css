@@ -1,5 +1,6 @@
 :root {
   --clr-primary: #4369b2;
+  --clr-primary-dark: #2657b3;
   --clr-white: #fff;
 }
 
@@ -10,6 +11,7 @@
 
 body {
   margin: 0;
+  background-color: var(--clr-primary);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
