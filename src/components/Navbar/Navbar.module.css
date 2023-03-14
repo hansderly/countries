@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-white);
+  padding: 15px 15px;
+}
+
+.return {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.settings {
+  display: flex;
+  gap: 15px;
+}
