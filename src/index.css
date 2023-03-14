@@ -1,3 +1,8 @@
+:root {
+  --clr-primary: #4369b2;
+  --clr-white: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
