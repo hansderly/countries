@@ -1,8 +1,8 @@
-import { HomePage } from './pages';
+import { DetailPage } from './pages';
 
 function App() {
   return (
-    <HomePage />
+    <DetailPage />
   );
 }
 
