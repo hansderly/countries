@@ -1,24 +1,33 @@
 import React from 'react';
-import { FiArrowRightCircle } from 'react-icons/fi';
+import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+
+import { searchByName } from '../../store/country/countrySlice';
 import {
-  HeadCardList, MainCard, Navbar, ScreenView,
+  HeadCardList, MainCard, ScreenView, CardInfos,
 } from '../../components';
 
-import styles from './DetailPage.module.css';
+const DetailPage = () => {
+  const dispatch = useDispatch();
+  const { countryName } = useParams();
 
-const DetailPage = () => (
-  <ScreenView>
-    <Navbar />
-    <MainCard />
-    <HeadCardList />
-    <div className={styles.container}>
-      <h4>name</h4>
-      <div className={styles.infos}>
-        <p>25,101 Peoples</p>
-        <FiArrowRightCircle />
-      </div>
-    </div>
-  </ScreenView>
-);
+  React.useEffect(() => {
+    dispatch(searchByName({ countryName }));
+  }, []);
+
+  const { searchCountry } = useSelector((store) => store.country);
+
+  return (
+    <ScreenView>
+      <MainCard flag={searchCountry?.flags} name={countryName} />
+      <HeadCardList />
+      {
+        Object.keys(searchCountry).map((c, i) => (
+          <CardInfos key={c} id={i} name={countryName} keyObj={c} valueObj={searchCountry[c]} />
+        ))
+      }
+    </ScreenView>
+  );
+};
 
 export default DetailPage;
