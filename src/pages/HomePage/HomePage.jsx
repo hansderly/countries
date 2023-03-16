@@ -26,7 +26,7 @@ const HomePage = () => {
   return (
     <ScreenView>
       <MainCard name="Europe" flag="/assets/img/map.png" />
-      <HeadCardList />
+      <HeadCardList name="continent" />
       <Search onChangeSearch={onChangeSearch} valueSearch={search} />
       <div className={styles.container}>
         {

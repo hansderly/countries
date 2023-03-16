@@ -21,7 +21,7 @@ const DetailPage = () => {
   return (
     <ScreenView>
       <MainCard flag={flag} name={countryName} />
-      <HeadCardList />
+      <HeadCardList name="country" />
       {
         Object.keys(searchCountry).map((c, i) => (
           <CardInfos key={c} id={i} name={countryName} keyObj={c} valueObj={searchCountry[c]} />
