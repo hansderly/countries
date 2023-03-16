@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 
 import { searchByName } from '../../store/country/countrySlice';
 import {
@@ -9,6 +9,7 @@ import {
 
 const DetailPage = () => {
   const dispatch = useDispatch();
+  const { state: { flag } } = useLocation();
   const { countryName } = useParams();
 
   React.useEffect(() => {
@@ -19,7 +20,7 @@ const DetailPage = () => {
 
   return (
     <ScreenView>
-      <MainCard flag={searchCountry?.flags} name={countryName} />
+      <MainCard flag={flag} name={countryName} />
       <HeadCardList />
       {
         Object.keys(searchCountry).map((c, i) => (
