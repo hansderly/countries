@@ -1,0 +1,39 @@
+.containerCard {
+  position: relative;
+  border: 0;
+  text-decoration: none;
+}
+
+.infos {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .containerCard {
+    padding: 15px;
+  }
+
+  .containerCard > img {
+    width: 90px;
+  }
+
+  .infos {
+    position: absolute;
+    text-align: right;
+    top: 5px;
+    right: 5px;
+    height: 100%;
+  }
+
+  .infos > p {
+    position: absolute;
+    color: var(--clr-white);
+    font-weight: 600;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .infos > h3 {
+    align-items: flex-end;
+  }
+}
