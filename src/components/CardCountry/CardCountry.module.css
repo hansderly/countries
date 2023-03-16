@@ -1,6 +1,11 @@
 .containerCard {
   position: relative;
   border: 0;
+  text-decoration: none;
+}
+
+.infos {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {

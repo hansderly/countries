@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 /* eslint-disable max-len */
 /* eslint-disable no-param-reassign */
 import axios from 'axios';
@@ -25,8 +26,7 @@ const countrySlice = createSlice({
       const { countryName } = payload;
       const country = state.countries.filter((country) => country.name.common === countryName);
 
-      if (!country.capital) return {};
-
+      if (!country[0]) return {};
       const {
         capital, flags, tld, startOfWeek, name, population,
       } = country[0];
