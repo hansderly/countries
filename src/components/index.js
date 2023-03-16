@@ -4,7 +4,8 @@ import MainCard from './MainCard/MainCard';
 import HeadCardList from './HeadCardList/HeadCardList';
 import CardCountry from './CardCountry/CardCountry';
 import CardInfos from './CardInfos/CardInfos';
+import Search from './Search/Search';
 
 export {
-  ScreenView, Navbar, MainCard, HeadCardList, CardCountry, CardInfos,
+  ScreenView, Navbar, MainCard, HeadCardList, CardCountry, CardInfos, Search,
 };
