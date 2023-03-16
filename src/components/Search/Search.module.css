@@ -1,0 +1,13 @@
+.container {
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+input[type=text] {
+  width: 90%;
+  background-color: var(--clr-primary-dark);
+  color: white;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid white;
+}
