@@ -25,6 +25,8 @@ const countrySlice = createSlice({
       const { countryName } = payload;
       const country = state.countries.filter((country) => country.name.common === countryName);
 
+      if (!country.capital) return {};
+
       const {
         capital, flags, tld, startOfWeek, name, population,
       } = country[0];
