@@ -74,7 +74,7 @@
 
 > Here you can visit my live demo :
 
-- [Countries]()
+- [Countries](https://countries-79gw.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +84,7 @@
 
 > Here you can see our presentation :
 
-- [Presentation]()
+- [Presentation](https://www.loom.com/share/51c82e5e2d5f4f1faa36020d11871a24)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
